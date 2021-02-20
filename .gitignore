@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# editor
+.vscode
+
+# personal files
+assets/
+data/
+new_data/
+figures/
