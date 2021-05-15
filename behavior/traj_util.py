@@ -35,9 +35,9 @@ class mouseData:
         self.data.ny = self.data.ny.apply(lambda y: list(y))
     
     def time_extend(self):
-        max_time = 5000
-        self.data['rx'] = [squeak.uniform_time(x, t, max_duration=max_time) for x, t in zip(self.data.x, self.data.t)]
-        self.data['ry'] = [squeak.uniform_time(y, t, max_duration=max_time) for y, t in zip(self.data.y, self.data.t)]
+        # max_time = 5000
+        self.data['rx'] = [squeak.uniform_time(x, t, max_duration=max(t)) for x, t in zip(self.data.x, self.data.t)]
+        self.data['ry'] = [squeak.uniform_time(y, t, max_duration=max(t)) for y, t in zip(self.data.y, self.data.t)]
     
     def cal_metrics(self):
         # Mouse Stats
