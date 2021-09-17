@@ -132,7 +132,6 @@ dmypy.json
 .vscode
 
 # personal files
-assets/
 data/
 new_data/
 figures/
