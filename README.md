@@ -3,7 +3,7 @@
 Code for MT-EEG dataset preprocessing and preliminary analysis.
 ## Description
 
-Welcome to the GitHub repository for our paper entitled 'A resource for assessing dynamic binary choices in the adult brain using EEG and mouse tracking.'
+Welcome to the GitHub repository for our paper entitled *A resource for assessing dynamic binary choices in the adult brain using EEG and mouse tracking*.
 
 We provide a dataset combining high-density Electroencephalography (**HD-EEG**, 128 channels) and **mouse-tracking** intended as a resource for investigating dynamic decision processing of semantic and preference choices in the brain.
 
