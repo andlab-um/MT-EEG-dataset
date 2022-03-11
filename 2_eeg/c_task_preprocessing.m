@@ -2,22 +2,30 @@ clear;clc;
 eeglab nogui;
 
 %% set path
-root_path = 'path_to_your_data_folder/EGI_DATA';
+root_path = '/media/haiyanwu/Data/EGI_DATA';
 mff_path = fullfile(root_path, 'EGI_FMT');
-set_path = fullfile(root_path, 'EGI_SET');
 tmp_path = fullfile(root_path, 'EGI_TMP');
-location_path = 'path_to_eeglab/eeglab2021.1/sample_locs/GSN129.sfp';
+epoch_path = fullfile(root_path, 'EGI_EPOCH');
+log_path = fullfile(root_path, 'log');
+if (~exist(log_path, 'dir'))
+    mkdir(log_path);
+end
+
+% channel location file, get from MNE (python) package
+montage_path = '../assets/GSN-HydroCel-129.sfp';
 
 % set task names
+foodtask = "foodchoice";
 wordtask = "wordchoice";
 imagetask = "imagechoice";
-wmtask = "wordimagematch";
+% wmtask = "wordimagematch";
 
 % log file
-fileID = fopen('exp_10.txt','w');
+fileID = fopen(fullfile(root_path, 'exp_log.txt'),'w');
 
 %% start
-for task = [wordtask imagetask wmtask]
+parpool(16);
+for task = [ foodtask wordtask imagetask ]
     fprintf(fileID, '\n-------------------------------- %s --------------------------------\n', task);
     for i = 1 : 31
         f_path = fullfile(mff_path, sprintf('sub-%03d', i), 'eeg', sprintf('sub-%03d_task-%s_eeg.mff', i, task));
@@ -28,7 +36,7 @@ for task = [wordtask imagetask wmtask]
         EEG = pop_mffimport(f_path, 'type');
 
         %% load channel location
-        EEG = pop_chanedit(EEG, 'load', {location_path, 'filetype', 'autodetect'}, 'changefield', {132, 'labels', 'E129'});
+        EEG = pop_chanedit(EEG, 'load', {montage_path, 'filetype', 'autodetect'}, 'changefield', {132, 'labels', 'E129'});
 
         %% resample
         EEG = pop_resample(EEG, 250);
@@ -47,7 +55,8 @@ for task = [wordtask imagetask wmtask]
         %% detect 20Hz noise
         fig = figure;
         [spectra, freq] = pop_spectopo(EEG, 1, [0 EEG.xmax*1000], 'EEG', 'percent', 50, 'freq', [6 10 22], 'freqrange',[0.1 30],'electrodes','off');
-        saveas(fig, sprintf('./figures_sub/task-%s_sub-%03d_eeg', task, i), 'jpeg');
+        % save spectopo figure
+        saveas(fig, fullfile(log_path, sprintf('task-%s_sub-%03d_eeg', task, i)), 'png');
         close;
         [pks, locs] = findpeaks(mean(spectra), freq, 'MinPeakProminence', 2);
         % fprintf(fileID, 'sub-%03d, peaks: %d, locs: %d\n', i, pks, locs);
@@ -71,7 +80,11 @@ for task = [wordtask imagetask wmtask]
         % stimulus marker: 0400-0403
         stim_marker = string(sprintfc('%04d', 400:403));
         % correct response marker
-        resp_marker = ["0500", "0503", "0505", "0506"];
+        if task == foodtask
+            resp_marker = ["0500", "0501"];
+        else
+            resp_marker = ["0500", "0503", "0505", "0506"];
+        end
         select_list = [];
         for index = 1 : length(EEG.event)-1
             % if this marker is a stimulus marker and next marker is a correct response marker
@@ -150,7 +163,7 @@ for task = [wordtask imagetask wmtask]
         EEG = pop_saveset(EEG, 'filename', outname, 'filepath', dir_path, 'savemode', 'onefile');
 
         %% epoch data
-        EEG = pop_epoch(EEG, cellstr(stim_marker), [-0.2 0.8], 'newname', outname(1:end-4), 'epochinfo', 'yes');
+        EEG = pop_epoch(EEG, cellstr(stim_marker), [-0.2 1.8], 'newname', outname(1:end-4), 'epochinfo', 'yes');
 
         %% ! 5_save files
         dir_path = fullfile(tmp_path, '5_epoch', sprintf('sub-%03d', i));
@@ -165,7 +178,7 @@ for task = [wordtask imagetask wmtask]
 
         %% save to .set
         % create target folder if not exist
-        dir_path = fullfile(set_path, sprintf('sub-%03d', i), 'eeg');
+        dir_path = fullfile(epoch_path, sprintf('sub-%03d', i), 'eeg');
         if (~exist(dir_path, 'dir'))
             mkdir(dir_path);
         end
