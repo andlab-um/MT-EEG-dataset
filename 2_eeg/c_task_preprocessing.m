@@ -78,7 +78,7 @@ for task = [ foodtask wordtask imagetask ]
 
         %% extract useful events
         % stimulus marker: 0400-0403
-        stim_marker = string(sprintfc('%04d', 400:403));
+        stim_marker = ["0400", "0401", "0402", "0403"];
         % correct response marker
         if task == foodtask
             resp_marker = ["0500", "0501"];
@@ -87,9 +87,10 @@ for task = [ foodtask wordtask imagetask ]
         end
         select_list = [];
         for index = 1 : length(EEG.event)-1
-            % if this marker is a stimulus marker and next marker is a correct response marker
+            % if this marker is a stimulus marker and next marker is a (correct) response marker
             if any(find(stim_marker == EEG.event(index).type)) && any(find(resp_marker == EEG.event(index+1).type))
-                select_list(end + 1) = index;
+                % record response mark for foodchoice task (only correct trials for word/imagechoice task)
+                select_list(end + 1) = index + 1;
             end
         end
         % save selected events
