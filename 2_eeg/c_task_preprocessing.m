@@ -5,11 +5,14 @@ eeglab nogui;
 root_path = '/media/haiyanwu/Data/EGI_DATA';
 mff_path = fullfile(root_path, 'EGI_FMT');
 tmp_path = fullfile(root_path, 'EGI_TMP');
-epoch_path = fullfile(root_path, 'EGI_EPOCH');
 log_path = fullfile(root_path, 'log');
-if (~exist(log_path, 'dir'))
-    mkdir(log_path);
+if exist(tmp_path, 'dir')
+    rmdir(tmp_path, 's');
 end
+if exist(log_path, 'dir')
+    rmdir(log_path, 's');
+end
+mkdir(log_path);
 
 % channel location file, get from MNE (python) package
 montage_path = '../assets/GSN-HydroCel-129.sfp';
@@ -21,7 +24,7 @@ imagetask = "imagechoice";
 % wmtask = "wordimagematch";
 
 % log file
-fileID = fopen(fullfile(root_path, 'exp_log.txt'),'w');
+fileID = fopen(fullfile(root_path, 'exp_log.txt'), 'w');
 
 %% start
 parpool(16);
@@ -77,19 +80,20 @@ for task = [ foodtask wordtask imagetask ]
         EEG = pop_saveset(EEG, 'filename', outname, 'filepath', dir_path, 'savemode', 'onefile');
 
         %% extract useful events
-        % stimulus marker: 0400-0403
-        stim_marker = ["0400", "0401", "0402", "0403"];
-        % correct response marker
+        % stimulus mark: 0400-0403
+        stim_mark = ["0400", "0401", "0402", "0403"];
+        % correct response mark
         if task == foodtask
-            resp_marker = ["0500", "0501"];
+            resp_mark = ["0500", "0501"];
         else
-            resp_marker = ["0500", "0503", "0505", "0506"];
+            resp_mark = ["0500", "0503", "0505", "0506"];
         end
         select_list = [];
         for index = 1 : length(EEG.event)-1
-            % if this marker is a stimulus marker and next marker is a (correct) response marker
-            if any(find(stim_marker == EEG.event(index).type)) && any(find(resp_marker == EEG.event(index+1).type))
-                % record response mark for foodchoice task (only correct trials for word/imagechoice task)
+            % if this mark is a stimulus mark and next mark is a (correct) response mark
+            if any(find(stim_mark == EEG.event(index).type)) && any(find(resp_mark == EEG.event(index+1).type))
+                % add stim mark and response mark for correct trials (add all for foodchoice)
+                select_list(end + 1) = index;
                 select_list(end + 1) = index + 1;
             end
         end
@@ -124,7 +128,6 @@ for task = [ foodtask wordtask imagetask ]
         EEG.nbchan = EEG.nbchan + 1;
         EEG.data(end+1, :) = zeros(1, EEG.pnts);
         EEG = pop_reref(EEG, []);
-
         %% ! 2_save files
         dir_path = fullfile(tmp_path, '2_rejct_reref', sprintf('sub-%03d', i));
         if (~exist(dir_path, 'dir'))
@@ -141,7 +144,6 @@ for task = [ foodtask wordtask imagetask ]
         EEG.icaweights = EEG_forICA.icaweights;
         EEG.icasphere  = EEG_forICA.icasphere;
         EEG = eeg_checkset(EEG, 'ica');
-
         %% ! 3_save files
         dir_path = fullfile(tmp_path, '3_ica', sprintf('sub-%03d', i));
         if (~exist(dir_path, 'dir'))
@@ -155,7 +157,6 @@ for task = [ foodtask wordtask imagetask ]
         EEG = pop_icflag(EEG, [NaN NaN; 0.7 1; 0.6 1; 0.7 1; 0.7 1; 0.7 1; NaN NaN]);
         EEG = pop_subcomp(EEG, [], 0, 0);
         fprintf(fileID, 'removed components: %d; ', size(EEG.icaweights, 2) - size(EEG.icaweights, 1));
-
         %% ! 4_save files
         dir_path = fullfile(tmp_path, '4_ica_reject', sprintf('sub-%03d', i));
         if (~exist(dir_path, 'dir'))
@@ -164,38 +165,13 @@ for task = [ foodtask wordtask imagetask ]
         EEG = pop_saveset(EEG, 'filename', outname, 'filepath', dir_path, 'savemode', 'onefile');
 
         %% epoch data
-        EEG = pop_epoch(EEG, cellstr(stim_marker), [-0.2 1.8], 'newname', outname(1:end-4), 'epochinfo', 'yes');
-
-        %% ! 5_save files
-        dir_path = fullfile(tmp_path, '5_epoch', sprintf('sub-%03d', i));
-        if (~exist(dir_path, 'dir'))
-            mkdir(dir_path);
-        end
-        EEG = pop_saveset(EEG, 'filename', outname, 'filepath', dir_path, 'savemode', 'onefile');
-
+        EEG = pop_epoch(EEG, cellstr(stim_mark), [-0.2 1.8], 'newname', outname(1:end-4), 'epochinfo', 'yes');
         % baseline correction
         EEG = pop_rmbase(EEG, [-200 0], []);
-        fprintf(fileID, 'removed trials: %d, last trials: %d\n', length(select_list)-EEG.trials, EEG.trials);
-
-        %% save to .set
-        % create target folder if not exist
-        dir_path = fullfile(epoch_path, sprintf('sub-%03d', i), 'eeg');
-        if (~exist(dir_path, 'dir'))
-            mkdir(dir_path);
-        end
-        EEG = pop_saveset(EEG, 'filename', outname, 'filepath', dir_path, 'savemode', 'onefile');
+        fprintf(fileID, 'reserved trials: %d\n', EEG.trials);
         % % [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0, 'setname', 'clean_epoch','gui','off');
         % % eeglab redraw;
     end
 end
 
 fclose(fileID);
-
-% EEG = pop_rmdat(EEG, {'rsfi'}, [0 6.1], 0);
-% EEG = pop_saveset(EEG,'filename','D:\EGI_DATA\EGI_REST_SET\sub-001_task-rest_pre.set','filepath','');
-
-% EEG = eeg_regepochs(EEG, 'recurrence', 2, 'limits', [0 2], 'eventtype','10');
-% EEG = pop_saveset(EEG,'filename','D:\EGI_DATA\EGI_REST_SET\sub-001_task-rest_epo.set','filepath','');
-
-% For rest data
-% EEG = eeg_regepochs(EEG, 'recurrence', 2, 'limits', [-0.1 2], 'eventtype', 'new', 'extractepochs', 'on');
