@@ -1,17 +1,23 @@
 %% Read the data and perform preprocessing
-clear; clc
+%% set path
+output_path = fullfile('..', 'data');
+ConDir = fullfile(output_path, 'EGI_REST');
+SavePath = fullfile(output_path, 'EGI_REST_MS');
+if exist(SavePath, 'dir')
+    rmdir(SavePath, 's');
+end
+mkdir(SavePath);
 
-ConDir = 'D:\\EGI_DATA\\EGI_REST_SET';
-SavePath = 'D:\\EGI_DATA\\EGI_REST_MS';
+% channel location file, get from MNE (python) package
+montage_path = fullfile('..', 'assets', 'GSN-HydroCel-129.sfp');
+
 group_name = 'resting-state';
-
 ConIndex = [];
-
 DirCon = dir(fullfile(ConDir,'*.set'));  %%%% find all the set file in your folder
 FileNamesCon = {DirCon.name};
 
 % Read the data and preprocess
-eeglab
+eeglab;
 for f = 1:numel(FileNamesCon)
     EEG = pop_loadset(FileNamesCon{f}, ConDir); 
     setname = strrep(FileNamesCon{f},'.set',''); 
@@ -24,7 +30,7 @@ for f = 1:numel(FileNamesCon)
     ConIndex = [ConIndex CURRENTSET]; 
 end
 
-eeglab redraw
+eeglab redraw;
 
 %% Cluster the stuff
 ClustPars = struct('MinClasses', 3, 'MaxClasses', 6, 'GFPPeaks', 1, 'IgnorePolarity', 1, ...
@@ -38,7 +44,7 @@ for i = 1:numel(ConIndex)
     ALLEEG = eeg_store(ALLEEG, tmpEEG, ConIndex(i)); % Done, we just need to store this
 end
 
-eeglab redraw
+eeglab redraw;
 
 %% Now we combine the microstate maps across subjects and edit the mean
 EEG = pop_CombMSTemplates(ALLEEG, ConIndex, 0, 0, strcat('GrandMean', group_name));
@@ -47,12 +53,12 @@ EEG = pop_CombMSTemplates(ALLEEG, ConIndex, 0, 0, strcat('GrandMean', group_name
 [ALLEEG,EEG, CURRENTSET] = eeg_store(ALLEEG, EEG, CURRENTSET); % and store it
 GrandMeanConIndex = CURRENTSET; % And keep track of it
 
-eeglab redraw
+eeglab redraw;
 
 %% And we sort things out over means and subjects
 ALLEEG = pop_SortMSTemplates(ALLEEG, ConIndex, 0, GrandMeanConIndex); 
 
-eeglab redraw
+eeglab redraw;
 
 %% eventually save things
 for f = 1:numel(ALLEEG)
