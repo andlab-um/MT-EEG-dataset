@@ -23,7 +23,7 @@ For a detailed question of the content of this repository, please get in touch w
 ├── 0_format
 │   ├── convert2bids.ipynb          # BIDS conversion from raw data to BIDS
 │   └── mff2set.m                   # convert .mff file to .set file
-├── 1_behavior                      # behavior data analysis
+├── 1_behavior
 │   ├── a_behavior.ipynb            # rt/acc etc. for different tasks/conditions
 │   ├── b_trajectory.ipynb          # trajectory plot
 │   └── traj_util.py
