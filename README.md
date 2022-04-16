@@ -15,10 +15,35 @@ For a detailed question of the content of this repository, please get in touch w
 
 16.08.2021 - Submission date
 
+
+
+### Structure
+
+```bash
+├── 0_format
+│   ├── convert2bids.ipynb          # BIDS conversion from raw data to BIDS
+│   └── mff2set.m                   # convert .mff file to .set file
+├── 1_behavior                      # behavior data analysis
+│   ├── a_behavior.ipynb            # rt/acc etc. for different tasks/conditions
+│   ├── b_trajectory.ipynb          # trajectory plot
+│   └── traj_util.py
+├── 2_eeg
+│   ├── a_rest_preprocessing.m      # resting EEG preprocessing
+│   ├── b_rest_microstate.m         # microstate analysis
+│   ├── c_task_preprocessing.m      # task EEG preprocessing
+│   └── d_task_visualization.ipynb  # ERP/TFR/topomap/MVPA analysis
+├── assets
+│   ├── animacy.csv                 # animate/inanimate words (with english version)
+│   ├── association.csv             # mathing between words and images
+│   ├── GSN-HydroCel-129.sfp        # standard channel location
+│   └── Helvetica.ttf               # font for plotting
+├── LICENSE
+└── README.md
+```
+
+## Requirements
+
+
 ## REFERENCES
 
 To be provided.
-
-## Notes
-
-TODO
