@@ -11,7 +11,7 @@ Here, you can find the analysis scripts used in this project. In addition, the r
 
 For a detailed question of the content of this repository, please get in touch with um.andlab@gmail.com.
 
-## HISTORY
+## History
 
 16.08.2021 - Submission date
 
@@ -43,7 +43,29 @@ For a detailed question of the content of this repository, please get in touch w
 
 ## Requirements
 
+Python
 
-## REFERENCES
+```bash
+mne
+mne-bids
+numpy
+scipy
+scikit-learn
+pandas
+seaborn
+squeak  # https://github.com/const7/Squeak
+```
+
+MATLAB
+
+```bash
+EEGLAB  # and related plugins
+```
+
+## Usage
+
+TODO
+
+## References
 
 To be provided.
