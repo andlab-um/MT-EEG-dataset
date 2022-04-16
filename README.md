@@ -17,7 +17,7 @@ For a detailed question of the content of this repository, please get in touch w
 
 16.04.2022 - Revision
 
-### Structure
+## Structure
 
 ```bash
 ├── 0_format
