@@ -22,7 +22,7 @@ for i = 1 : 31
         continue;
     end
     fname = fullfile(bids_path, sprintf('sub-%02d', i), 'eeg', sprintf('sub-%02d_task-resting_eeg.set', i));
-    outname = fullfile(rest_path, sprintf('sub-%02d_task-rest_eeg.set', i));
+    outname = fullfile(rest_path, sprintf('sub-%02d_task-resting_eeg.set', i));
     % sprintf('------------------- Processing %s -------------------', fname);
     % import data
     % EEG = pop_mffimport({fname}, {'code'});
