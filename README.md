@@ -1,6 +1,7 @@
 # MT-EEG-dataset
 
-Code for Mouse-Tracking EGI dataset preprocessing and preliminary analysis.
+Code for [Mouse-Tracking EGI dataset](https://openneuro.org/datasets/ds003766) preprocessing and preliminary analysis.
+
 ## Description
 
 Welcome to the GitHub repository for our paper entitled ***A resource for assessing dynamic binary choices in the adult brain using EEG and mouse tracking***.
