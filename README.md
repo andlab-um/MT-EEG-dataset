@@ -20,6 +20,8 @@ For a detailed question of the content of this repository, please get in touch w
 
 ## Structure
 
+> See well-rendered `2_eeg/d_task_visualization.ipynb` version [here](https://nbviewer.org/github/andlab-um/MT-EEG-dataset/blob/main/2_eeg/d_task_visualization.ipynb) since GitHub didn't render it correctly.
+
 ```bash
 ├── 0_format
 │   ├── convert2bids.ipynb          # BIDS conversion from raw data to BIDS
