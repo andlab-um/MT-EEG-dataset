@@ -26,7 +26,7 @@ For a detailed question of the content of this repository, please get in touch w
 │   └── mff2set.m                   # convert .mff file to .set file
 ├── 1_behavior
 │   ├── a_behavior.ipynb            # rt/acc etc. for different tasks/conditions
-│   ├── b_trajectory.ipynb          # trajectory plot
+│   ├── b_trajectory.ipynb          # trajectory analysis
 │   └── traj_util.py
 ├── 2_eeg
 │   ├── a_rest_preprocessing.m      # resting EEG preprocessing
@@ -34,7 +34,7 @@ For a detailed question of the content of this repository, please get in touch w
 │   ├── c_task_preprocessing.m      # task EEG preprocessing
 │   └── d_task_visualization.ipynb  # ERP/TFR/topomap/MVPA analysis
 ├── assets
-│   ├── animacy.csv                 # animate/inanimate words (with english version)
+│   ├── animacy.csv                 # animate/inanimate words (with chinese and corresponding english version)
 │   ├── association.csv             # mathing between words and images
 │   ├── GSN-HydroCel-129.sfp        # standard channel location
 │   └── Helvetica.ttf               # font for plotting
@@ -65,7 +65,19 @@ EEGLAB  # and related plugins
 
 ## Usage
 
-TODO
+Most of the time you only need to change the data path to your own one.
+
+### BIDS conversion (`0_format`)
+
+This part may not run smoothly since I started from the actual raw, dirty data, and there are several outside data imported. But still, you can refer to most of it to convert your mff data to BIDS compatible format data.
+
+### Behavior analysis (`1_behavior`)
+
+Change the data path to the BIDS path in your computer, and you can run this automatically. The `a_behavior.ipynb` will generate several .csv files for further use in `b_trajectory.ipynb`.
+
+### EEG analysis (`2_eeg`)
+
+Change the data path to the path in your computer again you can run it smoothly. `*_preprocessing.m` will generate preprocessed data for further use, and the rest files will do the analysis and visualization.
 
 ## References
 
