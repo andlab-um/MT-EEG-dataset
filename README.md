@@ -38,7 +38,7 @@ For a detailed question of the content of this repository, please get in touch w
 ├── assets
 │   ├── animacy.csv                 # animate/inanimate words (with chinese and corresponding english version)
 │   ├── association.csv             # mathing between words and images
-│   ├── GSN-HydroCel-129.sfp        # standard channel location
+│   ├── GSN-HydroCel-129.sfp        # standard channel location, get from MNE
 │   └── Helvetica.ttf               # font for plotting
 ├── LICENSE
 └── README.md
@@ -56,7 +56,7 @@ scipy
 scikit-learn
 pandas
 seaborn
-squeak  # https://github.com/const7/Squeak
+squeak  # https://github.com/const7/Squeak (fixed some API compatibility issues and adapted some functions)
 ```
 
 MATLAB
@@ -71,7 +71,7 @@ Most of the time you only need to change the data path to your own one.
 
 ### BIDS conversion (`0_format`)
 
-This part may not run smoothly since I started from the actual raw, dirty data, and there are several outside data imported. But still, you can refer to most of it to convert your mff data to BIDS compatible format data.
+This part may not run smoothly since I started from the actual raw, dirty data, and there are several outside data imported. But still, you can refer to most of the scripts to convert your mff data to BIDS compatible format data.
 
 ### Behavior analysis (`1_behavior`)
 
@@ -79,7 +79,7 @@ Change the data path to the BIDS path in your computer, and you can run this aut
 
 ### EEG analysis (`2_eeg`)
 
-Change the data path to the path in your computer again you can run it smoothly. `*_preprocessing.m` will generate preprocessed data for further use, and the rest files will do the analysis and visualization.
+Change the data path to the path in your computer again you can run it smoothly. `*_preprocessing.m` will generate preprocessed data for further use, and the rest scripts will do the analysis and visualization.
 
 ## References
 
