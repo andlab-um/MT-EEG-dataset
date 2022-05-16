@@ -63,11 +63,12 @@ MATLAB
 
 ```bash
 EEGLAB  # and related plugins
+Microstate plugin # for microstate analysis, see here https://www.thomaskoenig.ch/index.php/software/microstates-in-eeglab/getting-started
 ```
 
 ## Usage
 
-Most of the time you only need to change the data path to your own one.
+Most of the time you only need to change the data path to your own one. Make sure to install all packages before you start.
 
 ### BIDS conversion (`0_format`)
 
