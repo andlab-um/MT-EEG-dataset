@@ -1,24 +1,20 @@
 # MT-EEG-dataset
 
-Code for [Mouse-Tracking EGI dataset](https://openneuro.org/datasets/ds003766) preprocessing and preliminary analysis.
+[![GitHub repo size](https://img.shields.io/github/repo-size/andlab-um/MT-EEG-dataset?color=brightgreen&logo=github)](https://github.com/andlab-um/MT-EEG-dataset)
+[![Paper](https://img.shields.io/badge/Paper-10.1038%2Fs41597--022--01538--5-blue)](https://doi.org/10.1038/s41597-022-01538-5)
+[![OpenNeuro](https://img.shields.io/badge/OpenNeuro-ds003766-blue)](https://openneuro.org/datasets/ds003766)
+[![Twitter URL](https://img.shields.io/twitter/url?label=%40ANDlab3&style=social&url=https%3A%2F%2Ftwitter.com%2FANDlab3)
+](https://twitter.com/ANDlab3)
+
+Code for [[OpenNeuro] Mouse-Tracking EGI dataset](https://openneuro.org/datasets/ds003766) preprocessing and preliminary analysis, accompanying with the following paper:
+
+Chen, K., Wang, R., Huang, J., Gao, F., Yuan, Z., Qi, Y., & Wu, H. (2022). **A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking**. *Scientific Data*, 9(1), 416. https://doi.org/10.1038/s41597-022-01538-5
 
 ## Description
 
-Welcome to the GitHub repository for our paper entitled ***A resource for assessing dynamic binary choices in the adult brain using EEG and mouse tracking***.
+We provide a dataset combining high-density Electroencephalography (**HD-EEG**, 128 channels) and **mouse-tracking** intended as a resource for investigating *dynamic decision processing* of **semantic** and **food preference** choices in the brain.
 
-We provide a dataset combining high-density Electroencephalography (**HD-EEG**, 128 channels) and **mouse-tracking** intended as a resource for investigating dynamic decision processing of semantic and preference choices in the brain.
-
-Here, you can find the analysis scripts used in this project. In addition, the results from our analysis were uploaded to this repository.
-
-For a detailed question of the content of this repository, please get in touch with um.andlab@gmail.com.
-
-## History
-
-06.10.2021 - Submission date
-
-16.04.2022 - Revision 1
-
-16.05.2022 - Revision 2
+Here, you can find the analysis scripts used in this project with result figures. Please contact Kun CHEN (yc17307@um.edu.mo) if you have any questions about the code or dataset.
 
 ## Structure
 
@@ -83,7 +79,3 @@ Change the data path to the BIDS path in your computer, and you can run this aut
 ### EEG analysis (`2_eeg`)
 
 Change the data path to the path in your computer again you can run it smoothly. `*_preprocessing.m` will generate preprocessed data for further use, and the rest scripts will do the analysis and visualization.
-
-## References
-
-To be provided.
