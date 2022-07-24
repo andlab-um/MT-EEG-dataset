@@ -6,6 +6,8 @@
 [![Twitter URL](https://img.shields.io/twitter/url?label=%40ANDlab3&style=social&url=https%3A%2F%2Ftwitter.com%2FANDlab3)
 ](https://twitter.com/ANDlab3)
 
+> From [Affective, Neuroscience, and Decision-making Lab](https://andlab-um.com)
+
 Code for [[OpenNeuro] Mouse-Tracking EGI dataset](https://openneuro.org/datasets/ds003766) preprocessing and preliminary analysis, accompanying with the following paper:
 
 Chen, K., Wang, R., Huang, J., Gao, F., Yuan, Z., Qi, Y., & Wu, H. (2022). **A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking**. *Scientific Data*, 9(1), 416. https://doi.org/10.1038/s41597-022-01538-5
