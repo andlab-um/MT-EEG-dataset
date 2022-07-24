@@ -10,7 +10,7 @@
 
 Code for [[OpenNeuro] Mouse-Tracking EGI dataset](https://openneuro.org/datasets/ds003766) preprocessing and preliminary analysis, accompanying with the following paper:
 
-Chen, K., Wang, R., Huang, J., Gao, F., Yuan, Z., Qi, Y., & Wu, H. (2022). **A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking**. *Scientific Data*, 9(1), 416. https://doi.org/10.1038/s41597-022-01538-5
+Chen, K., Wang, R., Huang, J., Gao, F., Yuan, Z., Qi, Y., & Wu, H. (2022). **A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking**. *Scientific Data*, 9(1), 416. [https://doi.org/10.1038/s41597-022-01538-5](https://doi.org/10.1038/s41597-022-01538-5)
 
 ## Description
 
@@ -36,7 +36,7 @@ Here, you can find the analysis scripts used in this project with result figures
 │   ├── c_task_preprocessing.m      # task EEG preprocessing
 │   └── d_task_visualization.ipynb  # ERP/TFR/topomap/MVPA analysis
 ├── assets
-│   ├── animacy.csv                 # animate/inanimate words (with chinese and corresponding english version)
+│   ├── animacy.csv                 # animate/inanimate words(with chinese and corresponding english version)
 │   ├── association.csv             # mathing between words and images
 │   ├── GSN-HydroCel-129.sfp        # standard channel location, get from MNE
 │   └── Helvetica.ttf               # font for plotting
