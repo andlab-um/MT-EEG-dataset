@@ -16,7 +16,7 @@ Chen, K., Wang, R., Huang, J., Gao, F., Yuan, Z., Qi, Y., & Wu, H. (2022). **A r
 
 We provide a dataset combining high-density Electroencephalography (**HD-EEG**, 128 channels) and **mouse-tracking** intended as a resource for investigating *dynamic decision processing* of **semantic** and **food preference** choices in the brain.
 
-Here, you can find the analysis scripts used in this project with result figures. Please contact Kun CHEN (yc17307@um.edu.mo) if you have any questions about the code or dataset.
+You can find the analysis scripts used in this project with result figures. Please don't hesitate to create issues or contact [Kun CHEN](https://github.com/const7) (yc17307@um.edu.mo) if you have any questions about the code or dataset.
 
 ## Structure
 
