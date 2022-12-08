@@ -81,3 +81,18 @@ Change the data path to the BIDS path in your computer, and you can run this aut
 ### EEG analysis (`2_eeg`)
 
 Change the data path to the path in your computer again you can run it smoothly. `*_preprocessing.m` will generate preprocessed data for further use, and the rest scripts will do the analysis and visualization.
+
+## Citation
+
+```
+@article{chen2022resource,
+  title={A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking},
+  author={Chen, Kun and Wang, Ruien and Huang, Jiamin and Gao, Fei and Yuan, Zhen and Qi, Yanyan and Wu, Haiyan},
+  journal={Scientific data},
+  volume={9},
+  number={1},
+  pages={1--10},
+  year={2022},
+  publisher={Nature Publishing Group}
+}
+```
