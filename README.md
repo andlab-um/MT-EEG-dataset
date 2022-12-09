@@ -40,6 +40,11 @@ You can find the analysis scripts used in this project with result figures. Plea
 │   ├── association.csv             # mathing between words and images
 │   ├── GSN-HydroCel-129.sfp        # standard channel location, get from MNE
 │   └── Helvetica.ttf               # font for plotting
+├── stimuli
+│   ├── food                        # food choice task related PsychoPy scripts (questions & binary choice task)
+│   ├── imageChoice                 # image choice task related PsychoPy scripts
+│   ├── wordChoice                  # word choice task related PsychoPy scripts
+│   └── README.md                   # description of stimuli
 ├── LICENSE
 └── README.md
 ```

@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.2.10">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['姓名'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'姓名': '', '性别': '', '年龄': ''}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="fileList"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="pix" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[2194, 1234]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[-1,-1,-1]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="imageChoice" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="welc">
+      <PolygonComponent name="rect_start">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rect_start" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -490)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(150, 80)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="start_btn">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="50" valType="code"/>
+        <Param name="name" updates="None" val="start_btn" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -490)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="开始" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <MouseComponent name="welc_mouse">
+        <Param name="clickable" updates="constant" val="rect_start" valType="code"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
+        <Param name="name" updates="None" val="welc_mouse" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="never" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
+      </MouseComponent>
+      <ImageComponent name="guide_image">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="guide.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="guide_image" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <CodeComponent name="egi_init">
+        <Param name="Before Experiment" updates="constant" val="# set to True before start egi exp&amp;#10;netstation = False&amp;#10;recording = False" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="netstation = false;&amp;#10;recording = false;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="if netstation:&amp;#10;    import egi.simple as egi&amp;#10;    ns = egi.Netstation()&amp;#10;    print(&quot;import pynetstation&quot;)&amp;#10;    # set ip address&amp;#10;    ns.connect(&quot;10.10.10.42&quot;, 55513)&amp;#10;    ns.BeginSession()&amp;#10;    print(&quot;connected to netstation&quot;)&amp;#10;    if recording:&amp;#10;        ns.StartRecording()&amp;#10;        print(&quot;start recording&quot;)&amp;#10;&amp;#10;def send_to_NS(key_):&amp;#10;    if netstation:&amp;#10;        ns.sync()&amp;#10;        ns.send_event(key=key_)&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="if (netstation) {&amp;#10;    import * as egi from 'egi/simple';&amp;#10;    ns = new egi.Netstation();&amp;#10;    console.log(&quot;import pynetstation&quot;);&amp;#10;    ns.connect(&quot;10.10.10.42&quot;, 55513);&amp;#10;    new ns.BeginSession();&amp;#10;    console.log(&quot;connected to netstation&quot;);&amp;#10;    if (recording) {&amp;#10;        new ns.StartRecording();&amp;#10;        console.log(&quot;start recording&quot;);&amp;#10;    }&amp;#10;}&amp;#10;function send_to_NS(key_) {&amp;#10;    if (netstation) {&amp;#10;        ns.sync();&amp;#10;        ns.send_event({&quot;key&quot;: key});&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="egi_init" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="ready">
+      <PolygonComponent name="rect_ready">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rect_ready" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -490)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(150, 80)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="ready_btn">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="50" valType="code"/>
+        <Param name="name" updates="None" val="ready_btn" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -490)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="开始" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <MouseComponent name="ready_mouse">
+        <Param name="clickable" updates="constant" val="rect_ready" valType="code"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
+        <Param name="name" updates="None" val="ready_mouse" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="never" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
+      </MouseComponent>
+      <CodeComponent name="code_ready">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="win.mouseVisible = true;&amp;#10;send_to_NS(images.thisN.toString().zfill(4));&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="win.mouseVisible = True&amp;#10;send_to_NS(str(images.thisN).zfill(4))" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_ready" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="thanks">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="50" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="2" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="感谢参与！" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="egi_end">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (netstation) {&amp;#10;    if (recording) {&amp;#10;        new ns.StopRecording();&amp;#10;    }&amp;#10;    new ns.EndSession();&amp;#10;    ns.disconnect();&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if netstation:&amp;#10;    if recording:&amp;#10;        ns.StopRecording()&amp;#10;    ns.EndSession()&amp;#10;    ns.disconnect()&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="egi_end" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="fixation">
+      <TextComponent name="fixation_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="100" valType="code"/>
+        <Param name="name" updates="None" val="fixation_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="np.around(np.random.uniform(0.8, 1.5), 3)" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="display">
+      <CodeComponent name="setRect">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if (_pj.in_es6(&quot;rect_left&quot;, mouse.clicked_name)) {&amp;#10;    rect_left_2.lineColor = &quot;blue&quot;;&amp;#10;} else {&amp;#10;    rect_right_2.lineColor = &quot;blue&quot;;&amp;#10;    response_mark += 1;&amp;#10;}&amp;#10;send_to_NS(response_mark.toString().zfill(4));&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if &quot;rect_left&quot; in mouse.clicked_name:&amp;#10;    rect_left_2.lineColor = &quot;blue&quot;&amp;#10;else:&amp;#10;    rect_right_2.lineColor = &quot;blue&quot;&amp;#10;    response_mark += 1&amp;#10;send_to_NS(str(response_mark).zfill(4))" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="rect_left_2.lineColor = &quot;black&quot;;&amp;#10;rect_right_2.lineColor = &quot;black&quot;;&amp;#10;win.mouseVisible = false;&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="rect_left_2.lineColor = &quot;black&quot;&amp;#10;rect_right_2.lineColor = &quot;black&quot;&amp;#10;win.mouseVisible = False" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="setRect" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="image_item_2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$item" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="image_item_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="norm" valType="str"/>
+      </ImageComponent>
+      <PolygonComponent name="rect_left_2">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="5" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rect_left_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(300, 200)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="rect_right_2">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="5" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rect_right_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(300, 200)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="op_left_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="80" valType="code"/>
+        <Param name="name" updates="None" val="op_left_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$option_left" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="op_right_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="80" valType="code"/>
+        <Param name="name" updates="None" val="op_right_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$option_right" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="image">
+      <CodeComponent name="getTracking">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="x_list = [];&amp;#10;y_list = [];&amp;#10;t_list = [];&amp;#10;mouse.setPos([0, (- 490)]);&amp;#10;condition_mark = 400;&amp;#10;response_mark = 500;&amp;#10;if ((item.split(&quot;/&quot;)[0] === &quot;non-animate&quot;)) {&amp;#10;    condition_mark += 2;&amp;#10;    response_mark += 4;&amp;#10;}&amp;#10;if ((option_right === &quot;\u6709\u751f\u547d&quot;)) {&amp;#10;    condition_mark += 1;&amp;#10;    response_mark += 2;&amp;#10;}&amp;#10;send_to_NS(condition_mark.toString().zfill(4));&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="x_list = []&amp;#10;y_list = []&amp;#10;t_list = []&amp;#10;mouse.setPos([0, -490])&amp;#10;&amp;#10;# set mark&amp;#10;condition_mark = 400&amp;#10;response_mark = 500&amp;#10;if item.split(&quot;/&quot;)[0] == &quot;non-animate&quot;:&amp;#10;    condition_mark += 2&amp;#10;    response_mark += 4&amp;#10;if option_right == &quot;有生命&quot;:&amp;#10;    condition_mark += 1&amp;#10;    response_mark += 2&amp;#10;# send stim mark&amp;#10;send_to_NS(str(condition_mark).zfill(4))&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="# get mouse track&amp;#10;x_pos, y_pos = mouse.getPos()&amp;#10;x_list.append(x_pos)&amp;#10;y_list.append(y_pos)&amp;#10;t_list.append(imageClock.getTime())&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="[x_pos, y_pos] = mouse.getPos();&amp;#10;x_list.append(x_pos);&amp;#10;y_list.append(y_pos);&amp;#10;t_list.append(imageClock.getTime());&amp;#10;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="thisExp.addData(&quot;xTrajectory&quot;, x_list);&amp;#10;thisExp.addData(&quot;yTrajectory&quot;, y_list);&amp;#10;thisExp.addData(&quot;tTrajectory&quot;, t_list);&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData('xTrajectory', x_list)&amp;#10;thisExp.addData('yTrajectory', y_list)&amp;#10;thisExp.addData('tTrajectory', t_list)&amp;#10;" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="getTracking" valType="code"/>
+      </CodeComponent>
+      <MouseComponent name="mouse">
+        <Param name="clickable" updates="constant" val="rect_left, rect_right" valType="code"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
+        <Param name="name" updates="None" val="mouse" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="final" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="name," valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
+      </MouseComponent>
+      <ImageComponent name="image_item">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$item" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="image_item" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <PolygonComponent name="rect_left">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rect_left" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(300, 200)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <PolygonComponent name="rect_right">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="black" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rect_right" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(300, 200)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="op_left">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="80" valType="code"/>
+        <Param name="name" updates="None" val="op_left" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$option_left" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="op_right">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="80" valType="code"/>
+        <Param name="name" updates="None" val="op_right" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(810, 440)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$option_right" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="pause">
+      <TextComponent name="pause_tip">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Songti SC" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="50" valType="code"/>
+        <Param name="name" updates="None" val="pause_tip" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="请等待主试按下空格键后开始实验&amp;#10;在此期间您可休息片刻" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_start">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_start" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="pause_code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="isPause = False" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="isPause = false;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((images.thisN === 0) || ((images.thisN % 107) !== 0))) {&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    isPause = true;&amp;#10;    if ((netstation &amp;&amp; recording)) {&amp;#10;        new ns.StopRecording();&amp;#10;        console.log(&quot;pause recording&quot;);&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if images.thisN == 0 or images.thisN % 107 != 0:&amp;#10;    continueRoutine = False&amp;#10;else:&amp;#10;    isPause = True&amp;#10;    if netstation and recording:&amp;#10;        ns.StopRecording()&amp;#10;        print(&quot;pause recording&quot;)&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if (isPause) {&amp;#10;    isPause = false;&amp;#10;    if ((netstation &amp;&amp; recording)) {&amp;#10;        new ns.StartRecording();&amp;#10;        console.log(&quot;start recording&quot;);&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if isPause:&amp;#10;    isPause = False&amp;#10;    if netstation and recording:&amp;#10;        ns.StartRecording()&amp;#10;        print(&quot;start recording&quot;)&amp;#10;" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="pause_code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="welc"/>
+    <LoopInitiator loopType="TrialHandler" name="images">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('item', 'animate/a1.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a1.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a2.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a2.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a3.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a3.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a4.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a4.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a5.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a5.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a6.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a6.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a7.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a7.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a8.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a8.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a9.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a9.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a10.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a10.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a11.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a11.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a12.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a12.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a13.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a13.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a14.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a14.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a15.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a15.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a16.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a16.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a17.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a17.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a18.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a18.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a19.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a19.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a20.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a20.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a21.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a21.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a22.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a22.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a23.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a23.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a24.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a24.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a25.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a25.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a26.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a26.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a27.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a27.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a28.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a28.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a29.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a29.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a30.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a30.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a31.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a31.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a32.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a32.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a33.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a33.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a34.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a34.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a35.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a35.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a36.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a36.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a37.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a37.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a38.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a38.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a39.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a39.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a40.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a40.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a41.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a41.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a42.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a42.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a43.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a43.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a44.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a44.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a45.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a45.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a46.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a46.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a47.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a47.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a48.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a48.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a49.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a49.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a50.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a50.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a51.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a51.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a52.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a52.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a53.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a53.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a54.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a54.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a55.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a55.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a56.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a56.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a57.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a57.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a58.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a58.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a59.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a59.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a60.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a60.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a61.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a61.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a62.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a62.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a63.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a63.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a64.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a64.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a65.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a65.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a66.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a66.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a67.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a67.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a68.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a68.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a69.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a69.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a70.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a70.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a71.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a71.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a72.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a72.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a73.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a73.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a74.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a74.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a75.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a75.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a76.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a76.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a77.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a77.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a78.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a78.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a79.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a79.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'animate/a80.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'animate/a80.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n1.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n1.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n2.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n2.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n3.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n3.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n4.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n4.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n5.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n5.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n6.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n6.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n7.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n7.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n8.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n8.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n9.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n9.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n10.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n10.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n11.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n11.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n12.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n12.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n13.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n13.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n14.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n14.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n15.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n15.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n16.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n16.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n17.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n17.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n18.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n18.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n19.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n19.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n20.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n20.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n21.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n21.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n22.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n22.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n23.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n23.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n24.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n24.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n25.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n25.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n26.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n26.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n27.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n27.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n28.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n28.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n29.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n29.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n30.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n30.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n31.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n31.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n32.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n32.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n33.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n33.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n34.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n34.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n35.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n35.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n36.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n36.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n37.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n37.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n38.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n38.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n39.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n39.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n40.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n40.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n41.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n41.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n42.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n42.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n43.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n43.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n44.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n44.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n45.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n45.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n46.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n46.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n47.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n47.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n48.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n48.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n49.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n49.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n50.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n50.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n51.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n51.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n52.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n52.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n53.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n53.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n54.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n54.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n55.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n55.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n56.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n56.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n57.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n57.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n58.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n58.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n59.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n59.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n60.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n60.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n61.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n61.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n62.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n62.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n63.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n63.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n64.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n64.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n65.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n65.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n66.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n66.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n67.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n67.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n68.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n68.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n69.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n69.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n70.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n70.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n71.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n71.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n72.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n72.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n73.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n73.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n74.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n74.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n75.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n75.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n76.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n76.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n77.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n77.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n78.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n78.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n79.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n79.jpg'), ('option_left', '无生命'), ('option_right', '有生命')]), OrderedDict([('item', 'non-animate/n80.jpg'), ('option_left', '有生命'), ('option_right', '无生命')]), OrderedDict([('item', 'non-animate/n80.jpg'), ('option_left', '无生命'), ('option_right', '有生命')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="trialVar.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="images" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="pause"/>
+    <Routine name="ready"/>
+    <Routine name="image"/>
+    <Routine name="display"/>
+    <Routine name="fixation"/>
+    <LoopTerminator name="images"/>
+    <Routine name="thanks"/>
+  </Flow>
+</PsychoPy2experiment>

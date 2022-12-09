@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.2.4">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="False" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="fileList"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="norm" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1707, 960]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="foodTaste" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="end">
+      <TextComponent name="end_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="end_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="实验结束，感谢您的参与" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="mouse_text_end">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+        <Param name="name" updates="None" val="mouse_text_end" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.9)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="鼠标左键单击任意位置结束" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <MouseComponent name="end_mouse">
+        <Param name="clickable" updates="constant" val="" valType="code"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="any click" valType="str"/>
+        <Param name="name" updates="None" val="end_mouse" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="never" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="name," valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="welcome">
+      <TextComponent name="welcome_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="welcome_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="欢迎参加本次任务！实验中你需要根据问题和对应图片，点击数轴进行评分" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="mouse_text0">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+        <Param name="name" updates="None" val="mouse_text0" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.9)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="鼠标左键单击任意位置继续" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <MouseComponent name="welc_mouse">
+        <Param name="clickable" updates="constant" val="" valType="code"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="any click" valType="str"/>
+        <Param name="name" updates="None" val="welc_mouse" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="never" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="name," valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="trial">
+      <TextComponent name="question">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="question" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.8)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="你觉得这种食物味道如何？" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <ImageComponent name="foodimage">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$image" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="foodimage" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.1)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="norm" valType="str"/>
+      </ImageComponent>
+      <SliderComponent name="slider">
+        <Param name="color" updates="constant" val="LightGray" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="HelveticaBold" valType="str"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="granularity" updates="constant" val="1" valType="code"/>
+        <Param name="labels" updates="constant" val="&quot;非常不美味&quot;, &quot;非常美味&quot;" valType="list"/>
+        <Param name="name" updates="None" val="slider" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.7)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="styles" updates="constant" val="['rating', 'triangleMarker']" valType="fixedList"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="ticks" updates="constant" val="(-2, -1, 0, 1, 2)" valType="list"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </SliderComponent>
+      <TextComponent name="tip">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.07" valType="code"/>
+        <Param name="name" updates="None" val="tip" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.65)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="（点击数轴进行评分）" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="welcome"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('image', 'resource/0001.jpg')]), OrderedDict([('image', 'resource/0002.jpg')]), OrderedDict([('image', 'resource/0003.jpg')]), OrderedDict([('image', 'resource/0004.jpg')]), OrderedDict([('image', 'resource/0005.jpg')]), OrderedDict([('image', 'resource/0006.jpg')]), OrderedDict([('image', 'resource/0007.jpg')]), OrderedDict([('image', 'resource/0008.jpg')]), OrderedDict([('image', 'resource/0009.jpg')]), OrderedDict([('image', 'resource/0010.jpg')]), OrderedDict([('image', 'resource/0011.jpg')]), OrderedDict([('image', 'resource/0012.jpg')]), OrderedDict([('image', 'resource/0013.jpg')]), OrderedDict([('image', 'resource/0014.jpg')]), OrderedDict([('image', 'resource/0015.jpg')]), OrderedDict([('image', 'resource/0016.jpg')]), OrderedDict([('image', 'resource/0017.jpg')]), OrderedDict([('image', 'resource/0018.jpg')]), OrderedDict([('image', 'resource/0019.jpg')]), OrderedDict([('image', 'resource/0020.jpg')]), OrderedDict([('image', 'resource/0021.jpg')]), OrderedDict([('image', 'resource/0022.jpg')]), OrderedDict([('image', 'resource/0023.jpg')]), OrderedDict([('image', 'resource/0024.jpg')]), OrderedDict([('image', 'resource/0025.jpg')]), OrderedDict([('image', 'resource/0026.jpg')]), OrderedDict([('image', 'resource/0027.jpg')]), OrderedDict([('image', 'resource/0028.jpg')]), OrderedDict([('image', 'resource/0029.jpg')]), OrderedDict([('image', 'resource/0030.jpg')]), OrderedDict([('image', 'resource/0031.jpg')]), OrderedDict([('image', 'resource/0032.jpg')]), OrderedDict([('image', 'resource/0033.jpg')]), OrderedDict([('image', 'resource/0034.jpg')]), OrderedDict([('image', 'resource/0035.jpg')]), OrderedDict([('image', 'resource/0036.jpg')]), OrderedDict([('image', 'resource/0037.jpg')]), OrderedDict([('image', 'resource/0038.jpg')]), OrderedDict([('image', 'resource/0039.jpg')]), OrderedDict([('image', 'resource/0040.jpg')]), OrderedDict([('image', 'resource/0041.jpg')]), OrderedDict([('image', 'resource/0042.jpg')]), OrderedDict([('image', 'resource/0043.jpg')]), OrderedDict([('image', 'resource/0044.jpg')]), OrderedDict([('image', 'resource/0045.jpg')]), OrderedDict([('image', 'resource/0046.jpg')]), OrderedDict([('image', 'resource/0047.jpg')]), OrderedDict([('image', 'resource/0048.jpg')]), OrderedDict([('image', 'resource/0049.jpg')]), OrderedDict([('image', 'resource/0050.jpg')]), OrderedDict([('image', 'resource/0051.jpg')]), OrderedDict([('image', 'resource/0052.jpg')]), OrderedDict([('image', 'resource/0053.jpg')]), OrderedDict([('image', 'resource/0054.jpg')]), OrderedDict([('image', 'resource/0055.jpg')]), OrderedDict([('image', 'resource/0056.jpg')]), OrderedDict([('image', 'resource/0057.jpg')]), OrderedDict([('image', 'resource/0058.jpg')]), OrderedDict([('image', 'resource/0059.jpg')]), OrderedDict([('image', 'resource/0060.jpg')]), OrderedDict([('image', 'resource/0061.jpg')]), OrderedDict([('image', 'resource/0062.jpg')]), OrderedDict([('image', 'resource/0063.jpg')]), OrderedDict([('image', 'resource/0064.jpg')]), OrderedDict([('image', 'resource/0065.jpg')]), OrderedDict([('image', 'resource/0066.jpg')]), OrderedDict([('image', 'resource/0067.jpg')]), OrderedDict([('image', 'resource/0068.jpg')]), OrderedDict([('image', 'resource/0069.jpg')]), OrderedDict([('image', 'resource/0070.jpg')]), OrderedDict([('image', 'resource/0071.jpg')]), OrderedDict([('image', 'resource/0072.jpg')]), OrderedDict([('image', 'resource/0073.jpg')]), OrderedDict([('image', 'resource/0074.jpg')]), OrderedDict([('image', 'resource/0075.jpg')]), OrderedDict([('image', 'resource/0076.jpg')]), OrderedDict([('image', 'resource/0077.jpg')]), OrderedDict([('image', 'resource/0078.jpg')]), OrderedDict([('image', 'resource/0079.jpg')]), OrderedDict([('image', 'resource/0080.jpg')]), OrderedDict([('image', 'resource/0081.jpg')]), OrderedDict([('image', 'resource/0082.jpg')]), OrderedDict([('image', 'resource/0083.jpg')]), OrderedDict([('image', 'resource/0084.jpg')]), OrderedDict([('image', 'resource/0085.jpg')]), OrderedDict([('image', 'resource/0086.jpg')]), OrderedDict([('image', 'resource/0087.jpg')]), OrderedDict([('image', 'resource/0088.jpg')]), OrderedDict([('image', 'resource/0089.jpg')]), OrderedDict([('image', 'resource/0090.jpg')]), OrderedDict([('image', 'resource/0091.jpg')]), OrderedDict([('image', 'resource/0092.jpg')]), OrderedDict([('image', 'resource/0093.jpg')]), OrderedDict([('image', 'resource/0094.jpg')]), OrderedDict([('image', 'resource/0095.jpg')]), OrderedDict([('image', 'resource/0096.jpg')]), OrderedDict([('image', 'resource/0097.jpg')]), OrderedDict([('image', 'resource/0098.jpg')]), OrderedDict([('image', 'resource/0099.jpg')]), OrderedDict([('image', 'resource/0100.jpg')]), OrderedDict([('image', 'resource/0101.jpg')]), OrderedDict([('image', 'resource/0102.jpg')]), OrderedDict([('image', 'resource/0103.jpg')]), OrderedDict([('image', 'resource/0104.jpg')]), OrderedDict([('image', 'resource/0105.jpg')]), OrderedDict([('image', 'resource/0106.jpg')]), OrderedDict([('image', 'resource/0107.jpg')]), OrderedDict([('image', 'resource/0108.jpg')]), OrderedDict([('image', 'resource/0109.jpg')]), OrderedDict([('image', 'resource/0110.jpg')]), OrderedDict([('image', 'resource/0111.jpg')]), OrderedDict([('image', 'resource/0112.jpg')]), OrderedDict([('image', 'resource/0113.jpg')]), OrderedDict([('image', 'resource/0114.jpg')]), OrderedDict([('image', 'resource/0115.jpg')]), OrderedDict([('image', 'resource/0116.jpg')]), OrderedDict([('image', 'resource/0117.jpg')]), OrderedDict([('image', 'resource/0118.jpg')]), OrderedDict([('image', 'resource/0119.jpg')]), OrderedDict([('image', 'resource/0120.jpg')]), OrderedDict([('image', 'resource/0121.jpg')]), OrderedDict([('image', 'resource/0122.jpg')]), OrderedDict([('image', 'resource/0123.jpg')]), OrderedDict([('image', 'resource/0124.jpg')]), OrderedDict([('image', 'resource/0125.jpg')]), OrderedDict([('image', 'resource/0126.jpg')]), OrderedDict([('image', 'resource/0127.jpg')]), OrderedDict([('image', 'resource/0128.jpg')]), OrderedDict([('image', 'resource/0129.jpg')]), OrderedDict([('image', 'resource/0130.jpg')]), OrderedDict([('image', 'resource/0131.jpg')]), OrderedDict([('image', 'resource/0132.jpg')]), OrderedDict([('image', 'resource/0133.jpg')]), OrderedDict([('image', 'resource/0134.jpg')]), OrderedDict([('image', 'resource/0135.jpg')]), OrderedDict([('image', 'resource/0136.jpg')]), OrderedDict([('image', 'resource/0137.jpg')]), OrderedDict([('image', 'resource/0138.jpg')]), OrderedDict([('image', 'resource/0139.jpg')]), OrderedDict([('image', 'resource/0140.jpg')]), OrderedDict([('image', 'resource/0141.jpg')]), OrderedDict([('image', 'resource/0142.jpg')]), OrderedDict([('image', 'resource/0143.jpg')]), OrderedDict([('image', 'resource/0144.jpg')]), OrderedDict([('image', 'resource/0145.jpg')]), OrderedDict([('image', 'resource/0146.jpg')]), OrderedDict([('image', 'resource/0147.jpg')]), OrderedDict([('image', 'resource/0148.jpg')]), OrderedDict([('image', 'resource/0149.jpg')]), OrderedDict([('image', 'resource/0150.jpg')]), OrderedDict([('image', 'resource/0151.jpg')]), OrderedDict([('image', 'resource/0152.jpg')]), OrderedDict([('image', 'resource/0153.jpg')]), OrderedDict([('image', 'resource/0154.jpg')]), OrderedDict([('image', 'resource/0155.jpg')]), OrderedDict([('image', 'resource/0156.jpg')]), OrderedDict([('image', 'resource/0157.jpg')]), OrderedDict([('image', 'resource/0158.jpg')]), OrderedDict([('image', 'resource/0159.jpg')]), OrderedDict([('image', 'resource/0160.jpg')]), OrderedDict([('image', 'resource/0161.jpg')]), OrderedDict([('image', 'resource/0162.jpg')]), OrderedDict([('image', 'resource/0163.jpg')]), OrderedDict([('image', 'resource/0164.jpg')]), OrderedDict([('image', 'resource/0165.jpg')]), OrderedDict([('image', 'resource/0166.jpg')]), OrderedDict([('image', 'resource/0167.jpg')]), OrderedDict([('image', 'resource/0168.jpg')]), OrderedDict([('image', 'resource/0169.jpg')]), OrderedDict([('image', 'resource/0170.jpg')]), OrderedDict([('image', 'resource/0171.jpg')]), OrderedDict([('image', 'resource/0172.jpg')]), OrderedDict([('image', 'resource/0173.jpg')]), OrderedDict([('image', 'resource/0174.jpg')]), OrderedDict([('image', 'resource/0175.jpg')]), OrderedDict([('image', 'resource/0176.jpg')]), OrderedDict([('image', 'resource/0177.jpg')]), OrderedDict([('image', 'resource/0178.jpg')]), OrderedDict([('image', 'resource/0179.jpg')]), OrderedDict([('image', 'resource/0180.jpg')]), OrderedDict([('image', 'resource/0181.jpg')]), OrderedDict([('image', 'resource/0182.jpg')]), OrderedDict([('image', 'resource/0183.jpg')]), OrderedDict([('image', 'resource/0184.jpg')]), OrderedDict([('image', 'resource/0185.jpg')]), OrderedDict([('image', 'resource/0186.jpg')]), OrderedDict([('image', 'resource/0187.jpg')]), OrderedDict([('image', 'resource/0188.jpg')]), OrderedDict([('image', 'resource/0189.jpg')]), OrderedDict([('image', 'resource/0190.jpg')]), OrderedDict([('image', 'resource/0191.jpg')]), OrderedDict([('image', 'resource/0192.jpg')]), OrderedDict([('image', 'resource/0193.jpg')]), OrderedDict([('image', 'resource/0194.jpg')]), OrderedDict([('image', 'resource/0195.jpg')]), OrderedDict([('image', 'resource/0196.jpg')]), OrderedDict([('image', 'resource/0197.jpg')]), OrderedDict([('image', 'resource/0198.jpg')]), OrderedDict([('image', 'resource/0199.jpg')]), OrderedDict([('image', 'resource/0200.jpg')]), OrderedDict([('image', 'resource/0201.jpg')]), OrderedDict([('image', 'resource/0202.jpg')]), OrderedDict([('image', 'resource/0203.jpg')]), OrderedDict([('image', 'resource/0204.jpg')]), OrderedDict([('image', 'resource/0205.jpg')]), OrderedDict([('image', 'resource/0206.jpg')]), OrderedDict([('image', 'resource/0207.jpg')]), OrderedDict([('image', 'resource/0208.jpg')]), OrderedDict([('image', 'resource/0209.jpg')]), OrderedDict([('image', 'resource/0210.jpg')]), OrderedDict([('image', 'resource/0211.jpg')]), OrderedDict([('image', 'resource/0212.jpg')]), OrderedDict([('image', 'resource/0213.jpg')]), OrderedDict([('image', 'resource/0214.jpg')]), OrderedDict([('image', 'resource/0215.jpg')]), OrderedDict([('image', 'resource/0216.jpg')]), OrderedDict([('image', 'resource/0217.jpg')]), OrderedDict([('image', 'resource/0218.jpg')]), OrderedDict([('image', 'resource/0219.jpg')]), OrderedDict([('image', 'resource/0220.jpg')]), OrderedDict([('image', 'resource/0221.jpg')]), OrderedDict([('image', 'resource/0222.jpg')]), OrderedDict([('image', 'resource/0223.jpg')]), OrderedDict([('image', 'resource/0224.jpg')]), OrderedDict([('image', 'resource/0225.jpg')]), OrderedDict([('image', 'resource/0226.jpg')]), OrderedDict([('image', 'resource/0227.jpg')]), OrderedDict([('image', 'resource/0228.jpg')]), OrderedDict([('image', 'resource/0229.jpg')]), OrderedDict([('image', 'resource/0230.jpg')]), OrderedDict([('image', 'resource/0231.jpg')]), OrderedDict([('image', 'resource/0232.jpg')]), OrderedDict([('image', 'resource/0233.jpg')]), OrderedDict([('image', 'resource/0234.jpg')]), OrderedDict([('image', 'resource/0235.jpg')]), OrderedDict([('image', 'resource/0236.jpg')]), OrderedDict([('image', 'resource/0237.jpg')]), OrderedDict([('image', 'resource/0238.jpg')]), OrderedDict([('image', 'resource/0239.jpg')]), OrderedDict([('image', 'resource/0240.jpg')]), OrderedDict([('image', 'resource/0241.jpg')]), OrderedDict([('image', 'resource/0242.jpg')]), OrderedDict([('image', 'resource/0243.jpg')]), OrderedDict([('image', 'resource/0244.jpg')]), OrderedDict([('image', 'resource/0245.jpg')]), OrderedDict([('image', 'resource/0246.jpg')]), OrderedDict([('image', 'resource/0247.jpg')]), OrderedDict([('image', 'resource/0248.jpg')]), OrderedDict([('image', 'resource/0249.jpg')]), OrderedDict([('image', 'resource/0250.jpg')]), OrderedDict([('image', 'resource/0251.jpg')]), OrderedDict([('image', 'resource/0252.jpg')]), OrderedDict([('image', 'resource/0253.jpg')]), OrderedDict([('image', 'resource/0254.jpg')]), OrderedDict([('image', 'resource/0255.jpg')]), OrderedDict([('image', 'resource/0256.jpg')]), OrderedDict([('image', 'resource/0257.jpg')]), OrderedDict([('image', 'resource/0258.jpg')]), OrderedDict([('image', 'resource/0259.jpg')]), OrderedDict([('image', 'resource/0260.jpg')]), OrderedDict([('image', 'resource/0261.jpg')]), OrderedDict([('image', 'resource/0262.jpg')]), OrderedDict([('image', 'resource/0263.jpg')]), OrderedDict([('image', 'resource/0264.jpg')]), OrderedDict([('image', 'resource/0265.jpg')]), OrderedDict([('image', 'resource/0266.jpg')]), OrderedDict([('image', 'resource/0267.jpg')]), OrderedDict([('image', 'resource/0268.jpg')]), OrderedDict([('image', 'resource/0269.jpg')]), OrderedDict([('image', 'resource/0270.jpg')]), OrderedDict([('image', 'resource/0271.jpg')]), OrderedDict([('image', 'resource/0272.jpg')]), OrderedDict([('image', 'resource/0273.jpg')]), OrderedDict([('image', 'resource/0274.jpg')]), OrderedDict([('image', 'resource/0275.jpg')]), OrderedDict([('image', 'resource/0276.jpg')]), OrderedDict([('image', 'resource/0277.jpg')]), OrderedDict([('image', 'resource/0278.jpg')]), OrderedDict([('image', 'resource/0279.jpg')]), OrderedDict([('image', 'resource/0280.jpg')]), OrderedDict([('image', 'resource/0281.jpg')]), OrderedDict([('image', 'resource/0282.jpg')]), OrderedDict([('image', 'resource/0283.jpg')]), OrderedDict([('image', 'resource/0284.jpg')]), OrderedDict([('image', 'resource/0285.jpg')]), OrderedDict([('image', 'resource/0286.jpg')]), OrderedDict([('image', 'resource/0287.jpg')]), OrderedDict([('image', 'resource/0288.jpg')]), OrderedDict([('image', 'resource/0289.jpg')]), OrderedDict([('image', 'resource/0290.jpg')]), OrderedDict([('image', 'resource/0291.jpg')]), OrderedDict([('image', 'resource/0292.jpg')]), OrderedDict([('image', 'resource/0293.jpg')]), OrderedDict([('image', 'resource/0294.jpg')]), OrderedDict([('image', 'resource/0295.jpg')]), OrderedDict([('image', 'resource/0296.jpg')]), OrderedDict([('image', 'resource/0297.jpg')]), OrderedDict([('image', 'resource/0298.jpg')]), OrderedDict([('image', 'resource/0299.jpg')]), OrderedDict([('image', 'resource/0300.jpg')]), OrderedDict([('image', 'resource/0301.jpg')]), OrderedDict([('image', 'resource/0302.jpg')]), OrderedDict([('image', 'resource/0303.jpg')]), OrderedDict([('image', 'resource/0304.jpg')]), OrderedDict([('image', 'resource/0305.jpg')]), OrderedDict([('image', 'resource/0306.jpg')]), OrderedDict([('image', 'resource/0307.jpg')]), OrderedDict([('image', 'resource/0308.jpg')]), OrderedDict([('image', 'resource/0309.jpg')]), OrderedDict([('image', 'resource/0310.jpg')]), OrderedDict([('image', 'resource/0311.jpg')]), OrderedDict([('image', 'resource/0312.jpg')]), OrderedDict([('image', 'resource/0313.jpg')]), OrderedDict([('image', 'resource/0314.jpg')]), OrderedDict([('image', 'resource/0315.jpg')]), OrderedDict([('image', 'resource/0316.jpg')]), OrderedDict([('image', 'resource/0317.jpg')]), OrderedDict([('image', 'resource/0318.jpg')]), OrderedDict([('image', 'resource/0319.jpg')]), OrderedDict([('image', 'resource/0320.jpg')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="trialVar.csv" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
