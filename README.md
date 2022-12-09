@@ -18,6 +18,11 @@ We provide a dataset combining high-density Electroencephalography (**HD-EEG**, 
 
 You can find the analysis scripts used in this project with result figures. Please don't hesitate to create issues or contact [Kun CHEN](https://github.com/const7) (yc17307@um.edu.mo) if you have any questions about the code or dataset.
 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/19154386/206663251-5fb70be3-a126-4e94-ac0d-0b6962dcd6e4.png" align="middle" height="300px">
+	<br><i>Experimental paradigm</i>
+</p>
+
 ## Structure
 
 > See well-rendered `2_eeg/d_task_visualization.ipynb` version [here](https://nbviewer.org/github/andlab-um/MT-EEG-dataset/blob/main/2_eeg/d_task_visualization.ipynb) since GitHub didn't render it correctly.
