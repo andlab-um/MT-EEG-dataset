@@ -1,5 +1,7 @@
 # Tasks
 
+**2023-05-11 update**: The default EGI connection package has been updated from [egi](https://pypi.org/project/egi) to [egi-pynetstation](https://pypi.org/project/egi-pynetstation) since Standalone PsychoPy (2022.2.0). See [here](https://psychopy.org/api/hardware/egi.html). **Current PsychoPy programs were based on the old version of egi package.**
+
 ## Structure
 
 ```bash
